@@ -1,4 +1,4 @@
-# Bugs
+# Bugs 🪲 
 
 
 ### Siblings of AbstractTimer rollback when it catch Exceptions: 
