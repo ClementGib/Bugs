@@ -23,7 +23,10 @@ Un EJB qui va catcher une Runtime exception non annoté @ApplicationException(ro
         protected abstract void doSomething();
     }
 
-    
+    @Startup
+    @ApplicationScoped
+    @Singleton
+    @TransactionAttribute(TransactionAttributeType.NEVER)
     public class Scheduler extends AbstractTimer {
         @Override
         protected void doSomething() {
