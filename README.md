@@ -8,8 +8,15 @@ Un EJB qui va catcher une Runtime exception non annoté @ApplicationException(ro
 
 ```java
     public abstract class AbstractTimer {
+    
+        @Resource
+        private TimerService timerService
+        
+        private Timer timer;
+        
         @PostConstruct
         private void init() {
+        timer = timerService.createCalendarTimer(SchedulerExpression, timerConfig);
         ...
         }
     
