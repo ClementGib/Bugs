@@ -1,4 +1,5 @@
 # Bugs 🪲 
+
 # Languages
 [English](#english-)
 [Français](#français-)
