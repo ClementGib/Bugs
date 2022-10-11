@@ -9,7 +9,7 @@
 
 ## English 🇬🇧
 
-*Stack: JEE, Java8, Wildfly 20*
+*Stack: JEE, Java8, Wildfly 20* (2022)
 
 ### Siblings of @Timeout Object will rollback when it catch Exceptions: 
 The problem happens when a `Runtime` exception is catch in a child Object of a transactional `@Timeout` Object.
@@ -59,7 +59,7 @@ An `EJB` that `catch` a `Runtime` exception without the annotation `@Application
 
 ## Français 🇫🇷
 
-*Stack: JEE, Java8, Wildfly 20*
+*Stack: JEE, Java8, Wildfly 20* (2022)
 
 ### Un enfant d'une classe @Timeout va rollback quand il catch une Exception: 
 Le problème survient lorsqu'une exception `Runtime` est catché dans l'objet enfant.
