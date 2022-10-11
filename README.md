@@ -7,7 +7,7 @@
 
 
 
-## English 🇬🇧 🇺🇸
+## English 🇬🇧
 
 *Stack: JEE, Java8, Wildfly 20*
 
