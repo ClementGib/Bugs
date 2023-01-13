@@ -56,9 +56,31 @@ An `EJB` that `catch` a `Runtime` exception without the annotation `@Application
     }
 ```
 
-### 2: Retour 
-Débloquage du CRLF il faut préciser dans le `.gitattributes` les fichier ou le format avec `text eol=crlf`
+    
+### 2: line endings with carriage return and line feed on different environments
+When we develop on two distinct environments like Windows\Unix, there is differences. In the case of unit tests we expect to have the same behavior after processing. For processing or generating file the result can be different on Windows or Unix, Windows use the `carriage return` and `line feed` at the end of the line `CRLF` also called `\r\n` whereas Unix use just line feed `LF` also called `\n`.
+The git repository will contain only one type and using both can be a problem.
+To uniform the repository it needs to create the `.gitattributes` file to define attributs to the repository like the line ending for a type of file for example:
 
+```.gitattributes
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.c text
+*.h text
+
+# Declare files that will always have CRLF line endings on checkout.
+*.sln text eol=crlf
+
+# Declare file that will have CRLF ending
+test.xml eol=crlf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+```
 
 ## Français 🇫🇷
 
@@ -109,9 +131,9 @@ Un `EJB` qui va catcher une `Runtime` exception non annoté `@ApplicationExcepti
     }
 ```
     
-### 2: Retour chariot bloquant sur des environnements différents
-Quand on développe sur deux environnement distinc comme Windows\Unix il y a des différence, dans le cas des tests unitaires on s'attend à avoir le même résultat après le traitement.Dans le cas d'un traitement/génération d'un fichier le resultat peut être différent sur Windows ou Unix car Windows utilise les retours chariots `CRLF` soit `\r\n` alors que sur Unix `LF` soit `\n`.
-Le repository git va contenir un unique type et le passage de l'un à l'autre peut poser des problèmes.<br>
+### 2: Fin de ligne et retour chariot et line feed sur des environnements différents
+Quand on développe sur deux environnement distinct comme Windows\Unix il y a des différences, dans le cas des tests unitaires on s'attend à avoir le même résultat après le traitement. Pour le traitement ou la génération d'un fichier le resultat peut être différent sur Windows ou Unix, Windows utilise en fin de ligne les `retours chariots` et `line feed` `CRLF` appelé `\r\n` alors que sur Unix utilise juste `line feed` `LF` appelé `\n`.
+Le repository git va contenir un unique type et l'utilisation des deux peut poser des problèmes.<br>
 Pour uniformiser le repository il faut définir un fichier `.gitattributes` pour définir des attributs au repository git comme le type de retour chariot pour un format de fichiers:
 
 ```.gitattributes
