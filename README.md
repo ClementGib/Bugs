@@ -148,7 +148,7 @@ Pour uniformiser le repository il faut définir un fichier `.gitattributes` pour
 # Declare files that will always have CRLF line endings on checkout.
 *.sln text eol=crlf
 
-# Declare le fichier comme ayant toujours CRLF
+# Declare file that will have CRLF ending
 test.xml eol=crlf
 
 # Denote all files that are truly binary and should not be modified.
