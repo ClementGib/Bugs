@@ -2,8 +2,12 @@
 
 # Languages
 [English](#english-)
+
 [Find](#find-problem)
-&
+
+</br>
+
+
 [Français](#français-)
 [Trouver](#trouver-probléme)
 
