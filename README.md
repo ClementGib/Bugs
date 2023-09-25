@@ -10,7 +10,7 @@
 
 [Français](#français-)
 
-[Trouver](#trouver-probléme)
+[Trouver](#trouver-probleme)
 
 
 
@@ -177,7 +177,7 @@ test.xml eol=crlf
 ```
 
 
-## Trouver problème 🔎
+## Trouver probleme 🔎
 
 Conseils pour trouver le problème:
 
