@@ -2,6 +2,7 @@
 
 # Languages
 [English](#english-)
+[Find](#find problem)
 &
 [Français](#français-)
 
@@ -82,6 +83,19 @@ test.xml eol=crlf
 *.jpg binary
 ```
 
+
+## Find problem 🔎
+
+Tips to find problems:
+
+.1 Debug and follow steps of code to find when the problem happens.
+
+.2 Analyse modifications of PR/MR, verify parameters, assignations and line inversions.
+
+.3 Analyse the behavior between existing code and current branch.
+
+.4 Read documentation about used annotations or libraries 
+
 ## Français 🇫🇷
 
 *Stack: JEE, Java8, Wildfly 20* (2022)
@@ -155,3 +169,16 @@ test.xml eol=crlf
 *.png binary
 *.jpg binary
 ```
+
+
+## Trouver problème 🔎
+
+Conseils pour trouver le problème:
+
+.1 Debuguer et suivre les étapes pour trouver à quel moment le problème arrive.
+
+.2 Analyser les modifications PR/MR, vérifier parametres, assignations et inversions de lignes.
+
+.3 Analyser le comportement entre l'existant et la branche courante
+
+.4 Lire la documentation sur l'utilisation d'annotations ou bibliothèques...
