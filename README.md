@@ -3,14 +3,14 @@
 # Languages
 [English](#english-)
 
-[Find](#find-problem)
+[Find problem](#find-problem)
 
 </br>
 
 
 [Français](#français-)
 
-[Trouver](#trouver-probleme)
+[Trouver le probleme](#trouver-le-probleme)
 
 
 
@@ -177,7 +177,7 @@ test.xml eol=crlf
 ```
 
 
-## Trouver probleme 🔎
+## Trouver le probleme 🔎
 
 Conseils pour trouver le problème:
 
