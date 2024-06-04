@@ -1,6 +1,6 @@
 #### Adding new keyvault for provisioning engine:
 
-+ mount volume with `mountPath: `/name/` and 
++ mount volume with `mountPath: /name/` and:
 ```yml
 name: name-volume
 csi:
